@@ -1,138 +1,65 @@
-## Hi there 👋
-🧾 Sales and Inventory Management System
+**Sales and Inventory Management System**
 
-A console-based Sales and Inventory Management System built using Python and MySQL.
-Is project ka use Admin aur Customer dono kar sakte hain inventory manage karne aur purchase karne ke liye.
 
-🚀 Features
-🔐 Admin Panel
+**Overview**
 
-Admin login system
+The Sales and Inventory Management System is a console-based application developed using Python and MySQL. This project helps manage product inventory, track sales, and handle customer purchases efficiently. It provides separate functionalities for Admin and Customer, enabling smooth management of stock and transactions.
 
-New products add karna
+The system automatically creates the required database and tables, making it easy to set up and run.
 
-Product price update karna
+**Features**
 
-Product delete karna
+**Admin Features**
 
-Stock display karna
+Secure Admin Login System
+Add New Products to inventory
+Update Product Prices
+Delete Products from stock
+View All Available Items
+Change Admin Password
+Logout Option
 
-Admin password change karna
+**Customer Features**
 
-🛒 Customer Panel
+View Available Products
+Add Items to Bucket
+Automatic Bill Calculation
+Payment Amount Display
+Real-time Stock Update after Purchase
 
-Items purchase karna
+**Technologies Used**
 
-Payment amount dekhna
+Programming Language: Python
+Database: MySQL
+Library: mysql-connector-python
 
-Available products list dekhna
+**Database Structure**
 
-🛠️ Technologies Used
+The system automatically creates the following tables:
+login – Stores admin username and password
+stock – Stores product code, name, quantity, and price
+purchase – Stores purchase records with date, customer name, product code, and amount
 
-Python 3
+**How to Run the Project**
 
-MySQL Database
-
-mysql-connector-python
-
-🗄️ Database Structure
-
-Database ka naam: sales_manage
-
-Tables:
-
-login
-
-username
-
-password
-
-stock
-
-pcode
-
-pname
-
-quantity
-
-price
-
-purchase
-
-odate
-
-name
-
-pcode
-
-amount
-
-⚙️ Installation & Setup
-1️⃣ Requirements Install Karein
+Install Python and MySQL on your system.
+Install the required library:
 pip install mysql-connector-python
+Update the MySQL username and password in the script if needed.
+Run the Python file:
+python project.py
+Follow the menu options to use Admin or Customer functionalities.
 
-2️⃣ MySQL Setup
+**Default Login**
 
-MySQL server running hona chahiye
-
-Username aur password code me update karein:
-
-mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="12345"
-)
-
-3️⃣ Project Run Karein
-python main.py
-
-🔑 Default Login Credentials
 Username: usernamr
 Password: pass_
 
+**Future Improvements**
 
-⚠️ First login ke baad password change karna recommended hai.
-
-📌 How It Works
-
-Program start hote hi database aur tables automatically create ho jaate hain
-
-Admin inventory manage karta hai
-
-Customer items purchase karta hai
-
-Stock quantity auto-update hoti hai
-
-Purchase record database me save hota hai
-
-⚠️ Important Notes
-
-Ye project learning purpose ke liye best hai
-
-SQL queries me string concatenation use hui hai (production ke liye unsafe)
-
-Future improvement ke liye:
-
-SQL Injection protection
-
-GUI (Tkinter / Web App)
-
-Proper billing system
-
-Multiple customers support
-
-🌟 Future Enhancements (Optional)
-
-Login system with encryption
-
-Invoice generation
-
-Reports & analytics
-
-Role-based authentication
-
-Web-based version (Flask/Django)
-
-📄 License
-
-This project is open-source and free to use for educational purposes.
+GUI interface using Tkinter or PyQt
+Online payment integration
+Better authentication system
+Product search and filtering
+Sales report generation
+Automatic Bill Calculation
